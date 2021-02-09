@@ -12,7 +12,7 @@ a {
   text-decoration: none;
 }
 #main {
-  padding: 30px 50px;
+  /* padding: 30px 50px; */
   position: relative;
   width: 100%;
   height: 100vh;
@@ -20,7 +20,7 @@ a {
   background-size: 1330px;
   background-position: right bottom;
   background-repeat: no-repeat;
-  background-image: url("../images/bg.png");
+  /* background-image: url("../images/about-model.jpg"); */
   background-color: #edf1fd;
 }
 nav {
@@ -73,13 +73,13 @@ nav {
   font-family: calibri;
   width: 500px;
   position: absolute;
-  left: 20%;
-  top: 50%;
+  left: 64%;
+  top: 32%;
   transform: translate(-20%, -50%);
 }
 .name p:nth-child(1),
 .name .details {
-  color: #6c707c;
+  color: whitesmoke;
   font-size: 16px;
 }
 .name h1 {
@@ -101,6 +101,7 @@ nav {
 .cv-btn:hover {
   background-color: #131313;
   transition: all ease 0.5s;
+  cursor: pointer;
 }
 .black-line {
   align-self: end;
@@ -109,7 +110,7 @@ nav {
   margin-bottom: 4em;
   position: absolute;
   bottom: 0px;
-  left: -3%;
+  /* left: -3%; */
   border-right: 1px solid rgba(41, 41, 41, 0.3);
 }
 
@@ -517,6 +518,7 @@ p {
   .about-model img {
     height: 400px;
   }
+
   #services {
     height: auto;
   }
@@ -532,6 +534,13 @@ p {
   #contact-form form {
     width: 95% !important;
   }
+}
+
+#aboutImg {
+  height: auto;
+  width: auto;
+  max-width: 490px;
+  margin-left: 45px;
 }
 @media (max-width: 970px) {
   #main {
@@ -710,4 +719,20 @@ p {
 
 #showLessAboutMeBtn {
   display: none;
+}
+
+video {
+  /* object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed; */
+  /* top: 0;
+  left: 0; */
+  width: 99vw;
+}
+
+.aboutBtnCont {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }

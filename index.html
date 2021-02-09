@@ -41,30 +41,36 @@
         <!--language-->
         <!-- <a href="#" class="lang">En</a> -->
       </nav>
-      <!--name--------------------------->
-      <div class="name">
-        <!--hello------->
-        <p>Hello</p>
-        <!--name--->
-        <h1>I'm <font color="#17d1ac">Janu</font> Sung</h1>
-        <!--details--------------->
-        <p class="details">
-          Welcome to my personal site. I'm a dancer, designer, science-buff,
-          writer, conversationalist, fantasy-novel geek, software engineer, and
-          more - you can consider me a generalist at heart with a few
-          specialties.
-        </p>
-        <p class="details">
-          My tech stack is comprised of: Ruby, Rails, Javascript, React, Redux,
-          HTML, CSS, Bootstrap, and SQL. Check out some of my projects and blogs
-          below.
-        </p>
-        <p class="details">
-          I'm always open to collaborating on projects and chats. Feel free to
-          get in contact with me at any time.
-        </p>
-        <!--cv button-------------------->
-        <a href="#" class="cv-btn">Download Cv</a>
+      <div class="nameVidHeader">
+        <!--name--------------------------->
+        <div class="name">
+          <!--hello------->
+          <p>Hello</p>
+          <!--name--->
+          <h1>I'm <font color="#17d1ac">Janu</font> Sung</h1>
+          <!--details--------------->
+          <p class="details">
+            Welcome to my personal site. I'm a dancer, designer, science-buff,
+            writer, conversationalist, fantasy-novel geek, software engineer,
+            and more - you can consider me a generalist at heart with a few
+            specialties.
+          </p>
+          <p class="details">
+            My tech stack is comprised of: Ruby, Rails, Javascript, React,
+            Redux, HTML, CSS, Bootstrap, and SQL. Check out some of my projects
+            and blogs below.
+          </p>
+          <p class="details">
+            I'm always open to collaborating on projects and chats. Feel free to
+            get in contact with me at any time.
+          </p>
+        </div>
+        <!--header w/ video----------------------->
+        <div class="video-header">
+          <video id="headerVid" autoplay loop playsinline muted>
+            <source src="images/headerVid.mp4" type="video/mp4" />
+          </video>
+        </div>
       </div>
 
       <!--down arrow-------------->
@@ -125,16 +131,27 @@
             If you have any leads or would like to chat more, send me a message!
           </p>
         </div>
-        <button id="showMoreAboutMeBtn" onclick="showMoreAboutMe()">
-          View More Details
-        </button>
-        <button id="showLessAboutMeBtn" onclick="showLessAboutMe()">
-          View Less Details
-        </button>
+        <div class="aboutBtnCont">
+          <button id="showMoreAboutMeBtn" onclick="showMoreAboutMe()">
+            View More Details
+          </button>
+          <button id="showLessAboutMeBtn" onclick="showLessAboutMe()">
+            View Less Details
+          </button>
+          <!--cv button-------------------->
+          <div class="cvBtn">
+            <a
+              href="images/JanuSungResume.pdf"
+              class="cv-btn"
+              download="JanuSungResume"
+              >Download Resume</a
+            >
+          </div>
+        </div>
       </div>
       <!--about-model----------------->
       <div class="about-model">
-        <img alt="model" src="images/about-model.png" />
+        <img id="aboutImg" alt="model" src="images/about-model.jpg" />
       </div>
     </section>
 
