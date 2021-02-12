@@ -34,8 +34,8 @@
         <ul class="menu">
           <li class="active"><a href="#main">Home</a></li>
           <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
           <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#blogs">Blog</a></li>
           <li><a href="#contact-form">Contact</a></li>
         </ul>
         <!--language-->
@@ -144,6 +144,8 @@
               href="images/JanuSungResume.pdf"
               class="cv-btn"
               download="JanuSungResume"
+              target="_blank"
+              rel="noopener noreferrer"
               >Download Resume</a
             >
           </div>
@@ -154,20 +156,6 @@
         <img id="aboutImg" alt="model" src="images/about-model.jpg" />
       </div>
     </section>
-
-    <!--projects section------------------------>
-
-    <!-- <section id="projects"> -->
-    <!--heading-------------->
-    <!-- <h1>Code Projects</h1> -->
-    <!--projects container-->
-    <!-- <div>
-        <div class="scrolling-wrapper-flexbox">
-          <div class="card"><h2>Card</h2></div>
-          <div class="card"><h2>Card</h2></div>
-        </div>
-      </div>
-    </section> -->
 
     <!--portfolio------------------->
     <section id="portfolio">
@@ -188,6 +176,32 @@
               Activity & Fitness App that lets you build custom workouts and
               gives you back stats.
             </p>
+            <div class="links">
+              <a
+                href="https://github.com/Bakugou808/ActivTrackBackend"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Backend Repo</a
+              >
+              <a
+                href="https://github.com/Bakugou808/ActivTrackFrontendWebApp"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Frontend Repo</a
+              >
+              <a
+                href="https://activtrack.herokuapp.com/about"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Site</a
+              >
+              <a
+                href="https://youtu.be/AqmOk70ZjBs"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Demo</a
+              >
+            </div>
           </div>
         </div>
         <div class="cardTextCont">
@@ -205,6 +219,32 @@
               Dedicated to medical patients who've found relief through flower
               power.
             </p>
+            <div class="links">
+              <a
+                href="https://github.com/Bakugou808/pakalolo-backend"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Backend Repo</a
+              >
+              <a
+                href="https://github.com/Bakugou808/pakalolo-frontend"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Frontend Repo</a
+              >
+              <a
+                href="https://paka-lolo.herokuapp.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Site</a
+              >
+              <a
+                href="https://youtu.be/5GuuH0y2ce8"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Demo</a
+              >
+            </div>
           </div>
         </div>
         <div class="cardTextCont">
@@ -221,8 +261,43 @@
               Helping those with untraditional employment stay on top of their
               finances and clients.
             </p>
+            <div class="links">
+              <a
+                href="https://github.com/Bakugou808/gigEconomistBackend"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Backend Repo</a
+              >
+              <a
+                href="https://github.com/Bakugou808/gigEconomistFrontend"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Frontend Repo</a
+              >
+            </div>
           </div>
         </div>
+      </div>
+    </section>
+
+    <!--blogs------------------------>
+    <section id="blogs">
+      <div class="blog-cont">
+        <div id="medium-widget"></div>
+        <script src="https://medium-widget.pixelpoint.io/widget.js"></script>
+        <script>
+          MediumWidget.Init({
+            renderTo: "#medium-widget",
+            params: {
+              resource: "https://medium.com/@janu-m-sung",
+              postsPerLine: 10,
+              limit: 10,
+              picture: "none",
+              fields: ["description", "author", "publishAt"],
+              ratio: "square",
+            },
+          });
+        </script>
       </div>
     </section>
 
