@@ -90,19 +90,24 @@ nav {
   color: #292929;
 }
 .cv-btn {
-  width: 200px;
-  height: 45px;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #292929;
-  color: #ffffff;
+  color: black;
+  width: 180px;
+  height: 40px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  background-color: #17d1ac;
+  font-size: 15px;
 }
 .cv-btn:hover {
-  background-color: #131313;
+  background-color: #ffffff;
   transition: all ease 0.5s;
   cursor: pointer;
 }
+
 .black-line {
   align-self: end;
   width: 50%;
@@ -157,6 +162,8 @@ nav {
 .about-text {
   font-family: calibri;
   width: 50%;
+  position: relative;
+  top: -110;
 }
 .about-text h1 {
   font-size: 5rem;
@@ -183,6 +190,9 @@ h2 {
   border: none;
   outline: none;
   background-color: #17d1ac;
+  font-family: calibri;
+  cursor: pointer;
+  font-size: 15px;
 }
 .about-text button:hover {
   background-color: #ffffff;
@@ -463,17 +473,20 @@ p {
   font-weight: 400;
 }
 .f-name,
+.f-subject,
 .f-email {
   display: flex;
   flex-direction: column;
   font-family: calibri;
 }
 .f-name font,
+.f-subject font,
 .f-email font {
   color: #bfbfbf;
   font-size: 22px;
 }
 .f-name input,
+.f-subject input,
 .f-email input {
   height: 30px;
   width: 250px;
@@ -485,11 +498,13 @@ p {
   margin: 10px 0px;
 }
 .f-email input::placeholder,
+.f-subject input::placeholder,
 .f-name input::placeholder {
   opacity: 0.5;
   letter-spacing: 1px;
 }
 .f-email input:focus,
+.f-subject input:focus,
 .f-name input:focus {
   border-bottom: 1px solid #17d1ac;
   transition: all ease 0.5s;
@@ -668,10 +683,12 @@ p {
     border: none;
   }
   .f-name,
+  .f-subject,
   .f-email {
     width: 100%;
   }
   .f-name input,
+  .f-subject,
   .f-email input {
     width: 100%;
     border: none;

@@ -18,3 +18,13 @@ function showLessAboutMe() {
 function showContactform() {
   document.getElementById("contact-form").style.display = "flex";
 }
+
+window.onload = function () {
+  var url = window.location.pathname;
+  var searchParams = window.location.search;
+  if (searchParams.includes("Successfully+Sent")) {
+    alert("Thanks for the message.");
+  } else if (searchParams.includes("Email+could+not+be+sent")) {
+    alert("Sorry something went wrong there. Please try again!");
+  }
+};
