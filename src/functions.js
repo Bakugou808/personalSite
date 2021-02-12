@@ -14,3 +14,7 @@ function showLessAboutMe() {
   document.getElementById("about").style.margin = null;
   document.getElementById("showLessAboutMeBtn").style.display = "none";
 }
+
+function showContactform() {
+  document.getElementById("contact-form").style.display = "flex";
+}

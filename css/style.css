@@ -401,6 +401,7 @@ p {
   background-color: #1e1e1e;
   border: none;
   outline: none;
+  border-radius: 30px;
   box-shadow: 2px 5px 6px rgba(0, 0, 0, 0.2);
 }
 #contact-btn button:hover {
@@ -412,7 +413,7 @@ p {
 #contact-form {
   width: 100%;
   height: 90vh;
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
 }
@@ -772,6 +773,7 @@ video {
   flex-wrap: nowrap;
   overflow-x: inherit;
   width: 98vw;
+  margin-bottom: 70px;
 }
 .blog-head {
   align-content: center;
@@ -809,4 +811,18 @@ video {
 
 .widget-cont h4 {
   color: black;
+}
+
+.icon-cont {
+  display: flex;
+  justify-content: space-around;
+  width: 15%;
+}
+
+.icon {
+  color: rgb(66, 172, 144);
+}
+
+#contact-a-tag {
+  color: whitesmoke;
 }
