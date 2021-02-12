@@ -292,7 +292,7 @@ h2 {
   align-items: center;
   justify-content: center;
   background-color: #edf1fd;
-  padding: 20px 2% 20px 2%;
+  padding: 20px 2% 60px 2%;
 }
 
 .p-headind {
@@ -768,14 +768,45 @@ video {
 }
 
 .blog-cont {
-  display: flex;
+  display: grid;
   flex-wrap: nowrap;
   overflow-x: inherit;
   width: 98vw;
 }
+.blog-head {
+  align-content: center;
+  justify-items: center;
+  display: grid;
+}
 
+.blog-head h1 {
+  margin: 0px;
+}
+
+.blog-head p {
+  margin: 5px;
+  color: black;
+}
 #medium-widget .medium-widget-article__row {
   height: 25vh;
   margin-left: 15px;
   margin-right: 15px;
+}
+
+#medium-handle1 {
+  color: paleturquoise;
+}
+
+#medium-handle1:hover {
+  color: darkturquoise;
+}
+
+.widget-cont {
+  display: grid;
+  align-content: center;
+  justify-items: center;
+}
+
+.widget-cont h4 {
+  color: black;
 }

@@ -283,21 +283,36 @@
     <!--blogs------------------------>
     <section id="blogs">
       <div class="blog-cont">
-        <div id="medium-widget"></div>
-        <script src="https://medium-widget.pixelpoint.io/widget.js"></script>
-        <script>
-          MediumWidget.Init({
-            renderTo: "#medium-widget",
-            params: {
-              resource: "https://medium.com/@janu-m-sung",
-              postsPerLine: 10,
-              limit: 10,
-              picture: "none",
-              fields: ["description", "author", "publishAt"],
-              ratio: "square",
-            },
-          });
-        </script>
+        <div class="blog-head">
+          <h1>Blogs</h1>
+          <p>Find All My Blogs At</p>
+          <a
+            id="medium-handle1"
+            href="https://janu-m-sung.medium.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >@janu-m-sung</a
+          >
+        </div>
+        <div class="widget-cont">
+          <h4>Samples</h4>
+
+          <div id="medium-widget"></div>
+          <script src="https://medium-widget.pixelpoint.io/widget.js"></script>
+          <script>
+            MediumWidget.Init({
+              renderTo: "#medium-widget",
+              params: {
+                resource: "https://medium.com/@janu-m-sung",
+                postsPerLine: 10,
+                limit: 10,
+                picture: "none",
+                fields: ["description", "author", "publishAt"],
+                ratio: "square",
+              },
+            });
+          </script>
+        </div>
       </div>
     </section>
 
