@@ -419,7 +419,7 @@ p {
   justify-content: center;
   align-items: center;
   height: 40vh;
-  background-color: #f4f7ff;
+  background-color: #edf1fd;
   margin: 20px 0px;
   box-sizing: border-box;
   box-shadow: 2px 0px 20px rgba(0, 0, 0, 0.4);
@@ -623,6 +623,10 @@ p {
 
   .aboutBtnCont {
     justify-content: space-between;
+  }
+
+  .widget-cont .widget-scroll-wrapper {
+    height: 55vh;
   }
 }
 @media (max-width: 1131px) {
