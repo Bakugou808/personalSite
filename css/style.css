@@ -83,13 +83,17 @@ nav {
   font-weight: bold;
   transition: all ease 0.4s;
 }
+
+#name-top {
+  display: none;
+}
 .name {
   font-family: calibri;
   width: 500px;
   position: absolute;
   left: 64%;
   top: 32%;
-  transform: translate(-20%, -50%);
+  transform: translate(-15%, -90%);
 }
 .name p:nth-child(1),
 .name .details {
@@ -321,15 +325,15 @@ h2 {
 
 .p-headind {
   font-family: calibri;
-  font-size: 2.7rem;
+  font-size: 3.7rem;
   text-align: center;
-  color: #ffffff;
+  color: black;
   font-weight: 400;
   padding: 10px 20px;
-  background-color: #292929;
+  /* background-color: #292929; */
   letter-spacing: 2px;
   border-radius: 3px;
-  box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.1); */
   margin-bottom: 50px;
 }
 .p-box {
@@ -421,7 +425,7 @@ p {
   font-family: calibri;
   width: 150px;
   height: 40px;
-  margin: 10px;
+  margin: 30px;
   background-color: #1e1e1e;
   border: none;
   outline: none;
@@ -558,7 +562,7 @@ p {
   .name {
     left: 10%;
     top: 50%;
-    transform: translate(234%, -88%);
+    transform: translate(225%, -118%);
     width: 300px;
   }
 
@@ -598,6 +602,17 @@ p {
   }
   #headerVid {
     width: 80vw;
+  }
+
+  .nameVidHeader .video-header {
+    transform: translate(0px, 0px);
+  }
+  #name-top {
+    width: 80vw;
+    display: flex;
+  }
+  #name-bottom {
+    display: none;
   }
 
   .name {
@@ -773,6 +788,7 @@ p {
   }
   #contact-form form h1 {
     margin: 5px 0px;
+    margin-bottom: 20px;
   }
   #medium-widget .medium-widget-article__row {
     display: grid;
@@ -790,6 +806,12 @@ p {
 
   #blogs .blog-cont {
     width: auto;
+  }
+}
+
+@media (max-width: 700px) {
+  .black-line {
+    top: 710px;
   }
 }
 
@@ -834,7 +856,8 @@ p {
     width: auto;
   }
   .name {
-    /* width: 60%; */
+    width: auto;
+    margin: 40px;
   }
   .cardTextCont {
     margin-bottom: 40px;
@@ -852,16 +875,16 @@ p {
     width: 100%;
     height: 400px;
   }
-}
-
-.name {
-  width: 80vw;
+  .name {
+    width: 80vw;
+  }
 }
 
 .video-header {
   display: flex;
   align-items: center;
   justify-content: center;
+  transform: translate(0px, -60px);
 }
 
 #moreAboutMeSection {
@@ -886,13 +909,13 @@ p {
 }
 
 video {
-  /* object-fit: cover;
-  width: 100vw;
-  height: 100vh;
-  position: fixed; */
+  object-fit: cover;
+  /* width: 100vw; */
+  /* height: 100vh; */
+  /* position: fixed; */
   /* top: 0;
   left: 0; */
-  width: 99vw;
+  width: 100vw;
 }
 
 #contact-btn .icon-cont {
@@ -984,4 +1007,8 @@ video {
 }
 ::-webkit-scrollbar {
   display: none;
+}
+
+.c-l-heading {
+  margin-bottom: 20px;
 }
