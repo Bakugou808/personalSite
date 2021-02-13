@@ -885,6 +885,10 @@ p {
     height: 100vh;
   }
 
+  .black-line {
+    display: none;
+  }
+
   .nameVidHeader .video-header {
     transform: translate(0px, -25px);
   }
