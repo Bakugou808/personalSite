@@ -23,7 +23,7 @@ window.onload = function () {
   var url = window.location.pathname;
   var searchParams = window.location.search;
   if (searchParams.includes("Successfully+Sent")) {
-    alert("Thanks for the message.");
+    alert("Message Sent!");
   } else if (searchParams.includes("Email+could+not+be+sent")) {
     alert("Sorry something went wrong there. Please try again!");
   }
