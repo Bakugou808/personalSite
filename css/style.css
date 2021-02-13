@@ -774,6 +774,23 @@ p {
   #contact-form form h1 {
     margin: 5px 0px;
   }
+  #medium-widget .medium-widget-article__row {
+    display: grid;
+  }
+
+  .widget-scroll-wrapper {
+    height: 30vh;
+    overflow-y: scroll;
+  }
+
+  #blogs {
+    display: flex;
+    /* height: 80vh; */
+  }
+
+  #blogs .blog-cont {
+    width: auto;
+  }
 }
 
 @media (max-width: 600px) {
@@ -781,15 +798,47 @@ p {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
   }
+  #intro {
+    height: 90vh;
+  }
+
+  #portfolio {
+    padding: 20px 60px;
+  }
+
+  .black-line {
+    top: 653px;
+  }
+
   .c-b-heading {
     font-size: 1.2rem;
     text-align: center;
     margin: 0px 10%;
   }
-  .name {
-    width: 60%;
+
+  #medium-widget .medium-widget-article__row {
+    display: grid;
   }
 
+  .widget-scroll-wrapper {
+    height: 30vh;
+    overflow-y: scroll;
+  }
+
+  #blogs {
+    display: flex;
+    /* height: 80vh; */
+  }
+
+  #blogs .blog-cont {
+    width: auto;
+  }
+  .name {
+    /* width: 60%; */
+  }
+  .cardTextCont {
+    margin-bottom: 40px;
+  }
   .black-line {
     margin-bottom: 20px;
   }
@@ -805,6 +854,16 @@ p {
   }
 }
 
+.name {
+  width: 80vw;
+}
+
+.video-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 #moreAboutMeSection {
   display: none;
 }
@@ -818,6 +877,14 @@ p {
   display: none;
 }
 
+#aboutImg {
+  width: 60vw;
+}
+
+.about-text {
+  left: 16px;
+}
+
 video {
   /* object-fit: cover;
   width: 100vw;
@@ -828,12 +895,20 @@ video {
   width: 99vw;
 }
 
+#contact-btn .icon-cont {
+  justify-content: space-between;
+  width: 20%;
+  margin-top: 5px;
+}
 .aboutBtnCont {
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
 
+#about .about-text {
+  width: 80%;
+}
 .links a {
   border-right-style: double;
   border-right-width: thin;
@@ -906,4 +981,7 @@ video {
 
 #contact-a-tag {
   color: whitesmoke;
+}
+::-webkit-scrollbar {
+  display: none;
 }
