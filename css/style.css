@@ -880,6 +880,16 @@ p {
   }
 }
 
+@media (max-width: 360px) {
+  #intro {
+    height: 100vh;
+  }
+
+  .nameVidHeader .video-header {
+    transform: translate(0px, -25px);
+  }
+}
+
 .video-header {
   display: flex;
   align-items: center;
