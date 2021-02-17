@@ -985,6 +985,15 @@ p {
     .medium-widget-article__row {
     height: auto;
   }
+
+  #intro {
+    height: auto;
+  }
+
+  .video-header {
+    height: auto;
+    padding-bottom: 90px;
+  }
 }
 
 @media (max-width: 1190px) and (max-height: 840px) {
