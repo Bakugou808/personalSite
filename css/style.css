@@ -639,6 +639,10 @@ p {
     width: 80vw;
   }
 
+  #icons-bottom {
+    display: none;
+  }
+
   .nameVidHeader .video-header {
     transform: translate(0px, 0px);
   }
